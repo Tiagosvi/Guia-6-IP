@@ -47,3 +47,21 @@ def es_multiplo_de (n: float,m: float) -> bool: #Return ya que devuelve un bool
 def es_par (numero: int) -> None: #None ya que no devuelve nada, solo muestra por pantalla
     res:bool = es_multiplo_de(numero,2)
     print (res)
+
+def cantidad_de_pizzas (comensales: float,min_cant_de_porciones: float):
+    res = (comensales * min_cant_de_porciones) * 0,8
+    print (res)
+
+
+#Ejercicio 3
+def alguno_es_0 (numero1: float, numero2: float):
+    res = (numero1 == 0 and numero2 != 0) or (numero2 == 0 and numero1 != 0)
+    print (res)
+
+def ambos_son_0 (numero1: float, numero2: float):
+    res = (numero1 == 0 and numero2 == 0)
+    print (res) 
+
+def es_nombre_largo (nombre: str) -> bool:
+    res = 3 ≤ len(nombre) ≤ 8
+    print (res)
