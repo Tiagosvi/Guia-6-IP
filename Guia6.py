@@ -65,3 +65,11 @@ def ambos_son_0 (numero1: float, numero2: float):
 def es_nombre_largo (nombre: str) -> bool:
     res = 3 <= len(nombre) <= 8
     print (res)
+
+def es_bisiesto(año: int):
+    res = año % 400 == 0 or año % 4 == 0 and año % 100 != 0
+    print (res)
+
+
+#Ejercicio 4
+
