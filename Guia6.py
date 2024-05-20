@@ -49,7 +49,7 @@ def es_par (numero: int) -> None: #None ya que no devuelve nada, solo muestra po
     print (res)
 
 def cantidad_de_pizzas (comensales: float,min_cant_de_porciones: float):
-    res = (comensales * min_cant_de_porciones) * 0,8
+    res = (comensales * min_cant_de_porciones) // 8
     print (res)
 
 
@@ -63,5 +63,5 @@ def ambos_son_0 (numero1: float, numero2: float):
     print (res) 
 
 def es_nombre_largo (nombre: str) -> bool:
-    res = 3 ≤ len(nombre) ≤ 8
+    res = 3 <= len(nombre) <= 8
     print (res)
