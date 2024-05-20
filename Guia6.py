@@ -73,3 +73,21 @@ def es_bisiesto(año: int):
 
 #Ejercicio 4
 
+
+def peso_pino (altura: float):
+    if altura >= 3:
+        peso = (3 * 100) * 3 + ((altura - 3) * 100) * 2
+    else: peso = (altura * 100) * 3
+
+    return peso
+
+
+
+def es_peso_util (peso: float) -> bool:
+    if 400 < peso < 1000:
+        return True
+    else:
+        return False
+
+def sirve_pino (altura: float) -> bool:
+   return es_peso_util (peso_pino (altura))
