@@ -82,7 +82,6 @@ def peso_pino (altura: float):
     return peso
 
 
-
 def es_peso_util (peso: float) -> bool:
     if 400 < peso < 1000:
         return True
@@ -91,3 +90,39 @@ def es_peso_util (peso: float) -> bool:
 
 def sirve_pino (altura: float) -> bool:
    return es_peso_util (peso_pino (altura))
+
+#Ejercicio 5
+
+def par (numero: int) -> bool:
+    if numero % 2 == 0:
+        return True
+        
+def devolver_el_doble_si_es_par (numero: int):
+    if par(numero):
+        return numero * 2
+    else: 
+        return numero
+    
+def devolver_valor_si_es_par_sino_el_que_sigue(numero: int):
+    if par(numero):
+        return numero
+    else:
+        return numero + 1
+    
+def devolver_el_doble_si_es_multiplo3_el_triple_si_es_multiplo9(numero: int):
+    if numero % 9 == 0:
+        return numero * 3
+    if numero % 3 == 0:
+        return numero * 2
+    else:
+        return numero
+
+def lindo_nombre(nombre: int):
+    if len(nombre) >= 5:
+        return "Tu nombre tiene muchas letras"
+    else:
+        return "Tu nombre tiene menos de 5 caracteres"
+    
+    
+
+print(lindo_nombre("Tiago"))
