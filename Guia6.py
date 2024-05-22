@@ -123,6 +123,50 @@ def lindo_nombre(nombre: int):
     else:
         return "Tu nombre tiene menos de 5 caracteres"
     
-    
+def elRango(numero: int):
+    if numero < 5:
+        return "Menor a 5"
+    if numero > 10 and numero < 20:
+        return "Entre 10 y 20"
+    if numero > 20:
+        return "Mayor a 20"
+    else:
+        return numero
 
-print(lindo_nombre("Tiago"))
+
+#Ejercicio 6:
+
+def del_1_al_10():
+    x: int = 0
+    while x < 11:
+        print (x)
+        x += 1
+
+def pares_10_al_40():
+    x: int = 10
+    while x < 41:
+        if x % 2 == 0:
+            print (x)
+            x += 1
+        else:
+            x += 1
+
+def imprimir_eco():
+    i: int = 0
+    while i < 11:
+        print ("Eco")
+        i += 1
+
+def despegue(numero: int):
+    i: int = numero
+    while i > 0:
+        print(i)
+        i -= 1
+
+    return ("Despegue")
+
+
+
+
+
+print(despegue(5))
