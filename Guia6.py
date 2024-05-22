@@ -166,7 +166,57 @@ def despegue(numero: int):
     return ("Despegue")
 
 
+def viaje_tiempo (partida: int, llegada: int):
+    x : int = partida
+    y : int = llegada
+    while x >= y:
+        print (f"Viajó un año al pasado, estamos en el año: {x}")
+        x -= 1
+
+    print ("Llegamos")
 
 
+def viaje_tiempo_Ari (partida: int):
+    x: int = partida
 
-print(despegue(5))
+    while x >= -384:
+        print (f"Viajó un año al pasado, estamos en el año: {x}")
+        x -= 20
+
+    print("Llegamos con Ari!!! (Aristoteles)")
+
+
+#Ejercicio 7:
+
+def del_1_al_10for():
+    i : int = 0
+    for i in range (11):
+        print (i)
+
+
+def pares_10_al_40for():
+    for i in range (10,41):
+        if i % 2 == 0: 
+         print (i)
+
+def imprimir_ecofor():
+    for i in range (11):
+        print ("eco")
+
+def despeguefor(numero: int):
+    for i in range(numero,0,-1):
+        print (i)
+    print("Despegue")
+
+def viaje_tiempofor (partida: int, llegada: int):
+    for i in range (partida,llegada,-1):
+        print (i)
+    print ("Llegamos")
+
+
+def viaje_tiempo_Arifor (partida: int):
+    for i in range (partida,-384,-20):
+        print (i)
+    print ("Llegamos con Ari")
+
+print(viaje_tiempo_Arifor(2024))
